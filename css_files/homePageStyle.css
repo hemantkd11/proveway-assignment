@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  box-sizing: border-box;
+  background-color: #ffffff;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+main {
+  width: 80%;
+  max-width: 342px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.home_page_header {
+  width: 100%;
+  font-size: 20px;
+  height: 24px;
+  letter-spacing: 0px;
+  line-height: 100%;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home_page_header::before {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: #c8c8c8;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+.home_page_header::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: #c8c8c8;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+.home_page_header span {
+  color: #ff6b82;
+  background-color: white;
+  z-index: 2;
+  padding: 0px 5px;
+}
+
+.box-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.most-popular-tag {
+  position: absolute;
+  top: -10px;
+  right: 3px;
+  background-color: #ff5277;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 0px 0px 5px 5px;
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.box {
+  position: relative;
+  width: 100%;
+  border: 0.9px solid #c8c8c8;
+  padding: 25px 20px;
+  margin: 10px 0;
+  height: auto;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  background: #fff;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.box.active {
+  background: #ffe6ea;
+  height: auto;
+  border: 1px solid #ff6b82;
+  box-sizing: border-box;
+  border-inline: 1px solid #ff6b82;
+}
+.section_1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.section_1_unit {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.circle {
+  width: 14px;
+  height: 14px;
+  border: 1px solid rgb(177, 174, 174);
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.innerCircle {
+  width: 60%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.unit_count {
+  font-size: 14px;
+  font-weight: 600;
+}
+.priceType_unit {
+  font-size: 12px;
+  color: #000000;
+}
+.discount_priceType_unit {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+}
+.unit_count_discount_percent {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.discount_percent {
+  background-color: #ff6b82;
+  padding: 2px;
+  font-size: 12px;
+  color: #ffffff;
+}
+.section_1_price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+.section_1_discount_price {
+  font-size: 14.56px;
+  font-weight: 500;
+  letter-spacing: 0%;
+}
+.section_1_original_price {
+  font-size: 10px;
+  font-weight: 400;
+  text-decoration: line-through;
+  color: #979696;
+}
+.options {
+  margin-top: 10px;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  padding-left: 25px;
+  justify-content: space-between;
+}
+.option-section {
+  display: flex;
+  gap: 20px;
+  /* flex-direction: r; */
+}
+.option-dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+label {
+  font-size: 10px;
+  color: #000000;
+  font-weight: 400;
+}
+.option-box-number {
+  display: flex;
+  gap: 10px;
+  font-size: 10px;
+  align-items: center;
+}
+select {
+  padding: 5px;
+  border: 1px solid #d9d9d9;
+  border-radius: 0.9px;
+  background: #fff;
+  font-size: 10px;
+  width: 65px;
+}
+.size-padding {
+  padding-left: 22px;
+}
+.total {
+  font-size: 14px;
+  color: #ff6699;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  border: none;
+  background: #ff6699;
+  color: white;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #ff6699;
+}
+.powered-by {
+  margin: 0;
+  width: 342px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-size: 12px;
+  color: #00000066;
+}
+
+.hidden {
+  display: none;
+}
+.innerCircle-active {
+  background-color: #ff6699;
+}
+.circle-active {
+  border-color: #ff6699;
+}
